@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/ll_UIRoot"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".UIActivity">
+
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="80dp"
+        android:layout_marginStart="20dp"
+        android:padding="12dp"
+        android:background="@color/purple_200"
+        android:text="Left" />
+
+    <TextView
+        android:id="@+id/bt"
+        android:layout_width="wrap_content"
+        android:layout_height="60dp"
+        android:layout_marginTop="80dp"
+        android:layout_marginStart="140dp"
+        android:padding="12dp"
+        android:background="@color/purple_200"
+        android:text="Right1" />
+
+    <TextView
+        android:id="@+id/bt2"
+        android:layout_width="wrap_content"
+        android:layout_height="60dp"
+        android:layout_marginTop="140dp"
+        android:layout_marginStart="140dp"
+        android:padding="12dp"
+        android:background="@color/teal_200"
+        android:text="Right2" />
+
+    <LinearLayout
+        android:id="@+id/ll_insideRoot"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginTop="200dp"
+        android:layout_marginStart="140dp"
+        >
+        <include
+            layout="@layout/nest_process_layout" />
+
+    </LinearLayout>
+
+
+
+</FrameLayout>
